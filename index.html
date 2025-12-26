@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rucha Lokhande | DevOps Engineer</title>
+
+  <style>
+    :root {
+      --bg: #020617;
+      --card: #0f172a;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: linear-gradient(135deg, #020617, #020617);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 850px;
+      width: 100%;
+      background: var(--card);
+      border-radius: 14px;
+      padding: 40px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2.5rem;
+      color: var(--accent);
+    }
+
+    h2 {
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-size: 1.4rem;
+    }
+
+    p {
+      line-height: 1.7;
+      color: var(--text);
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin-bottom: 25px;
+      font-size: 1.1rem;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #020617;
+      border: 1px solid #1e293b;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: var(--accent);
+    }
+
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 15px;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Rucha Lokhande</h1>
+    <p class="subtitle">BCA Graduate • DevOps & Cloud Engineer</p>
+
+    <p>
+      Passionate DevOps and Cloud Engineer with hands-on experience in Linux,
+      AWS, CI/CD pipelines, containerization, and infrastructure automation.
+      Strong foundation in deploying and managing applications using modern
+      DevOps practices.
+    </p>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">Linux</div>
+        <div class="skill">AWS</div>
+        <div class="skill">Docker</div>
+        <div class="skill">Kubernetes</div>
+        <div class="skill">Jenkins</div>
+        <div class="skill">Ansible</div>
+        <div class="skill">Terraform</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">CI/CD</div>
+        <div class="skill">NGINX</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Certifications</h2>
+      <p>RHCSA • CDL Certified</p>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:ruchalokhande09@gmail.com">ruchalokhande09@gmail.com</a></p>
+      <div class="links">
+        <a href="https://github.com/Ruchalokhande" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/rucha-lokhande09" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+
+    <footer>
+      Deployed using AWS CodeCommit • CodeBuild • CodeDeploy • EC2
+    </footer>
+  </div>
+
+</body>
+</html>
