@@ -1,0 +1,29 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Install phase"
+      - sudo apt-get update
+      - sudo apt-get install -y zip
+
+  build:
+    commands:
+      - echo "Build started on `date`"
+      # Make a folder for the revision
+      - mkdir -p demo-app
+      - cp index.html demo-app/
+      - cp -r scripts demo-app/
+      - cp appspec.yml demo-app/
+      - cd demo-app
+      - zip -r ../demo-app.zip .  # Create ZIP for CodeDeploy
+      - cd ..
+
+  post_build:
+    commands:
+      - echo "Build completed on `date`"
+      - echo "demo-app.zip created for CodeDeploy"
+
+artifacts:
+  files:
+    - '**/*'
